@@ -9,57 +9,78 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    
+    // Mark :- Outlets of Constains
+    
     @IBOutlet weak var friendshipCenterContains: NSLayoutConstraint!
     @IBOutlet weak var funnyCenterConstains: NSLayoutConstraint!
-    
-    @IBOutlet weak var friendshipstatusLabel: UILabel!
     @IBOutlet weak var newyearCenterConstains: NSLayoutConstraint!
-    
     @IBOutlet weak var inspirationCenterConstains: NSLayoutConstraint!
+    @IBOutlet weak var birthdayCenterConstrains: NSLayoutConstraint!
+    @IBOutlet weak var romanticPopUpTextCenterConstains: NSLayoutConstraint!
+    @IBOutlet weak var romanticCenterConstrains: NSLayoutConstraint!
+
+
+    
+    // Mark :- Outlets of Pop UpView
     
     @IBOutlet weak var funnyPopUpView: PopUpViewCustom!
-    @IBOutlet weak var funnyStatusLabel: UILabel!
-    @IBOutlet weak var friendshipLabel: UILabel!
+    @IBOutlet weak var birthdayViewPopUp: UIView!
+    @IBOutlet weak var romanticViewPopUp: UIView!
     @IBOutlet weak var friendshipPopUpView: PopUpViewCustom!
-    @IBOutlet weak var newyearStatusLabel: UILabel!
-    
     @IBOutlet weak var newyearPopUpView: PopUpViewCustom!
-    
-    // Mark :- Outlets 
-    
-    @IBOutlet weak var inspirationStatusLabel: UILabel!
     @IBOutlet weak var inspirationViewPopUp: PopUpViewCustom!
     
-    @IBOutlet weak var birthdayStatusLabel: UILabel!
+
+    // Mark :- Outlets of Custom Views
     
-    @IBOutlet weak var birthdayCenterConstrains: NSLayoutConstraint!
-    @IBOutlet weak var birthdayViewPopUp: UIView!
-    @IBOutlet weak var romanticPopUpTextCenterConstains: NSLayoutConstraint!
-    @IBOutlet weak var backgroundButtonOutlet: UIButton!
-    @IBOutlet weak var romanticStatusLabel: UILabel!
-    @IBOutlet weak var romanticViewPopUp: UIView!
-    @IBOutlet weak var romanticCenterConstrains: NSLayoutConstraint!
-    @IBOutlet weak var view3: UIView!
     @IBOutlet weak var view1: UIView!
     @IBOutlet weak var view2: UIView!
-    @IBOutlet weak var quoteImage2: UIImageView!
-    @IBOutlet weak var quoteImage3: UIImageView!
-    @IBOutlet weak var quoteImage1: UIImageView!
-    @IBOutlet weak var backgrounImage: UIImageView!
-    @IBOutlet weak var funnyLabel: UILabel!
-    @IBOutlet weak var romanticLabel: UILabel!
-    @IBOutlet weak var birthdayLabel: UILabel!
-    @IBOutlet weak var inspireLabel: UILabel!
-    @IBOutlet weak var newyearLabel: UILabel!
-    @IBOutlet weak var romanticImage: UIImageView!
-    @IBOutlet weak var birthdayImage: UIImageView!
+    @IBOutlet weak var view3: UIView!
+    
+    // Mark :- Outlets of Status Labels
+    
+    @IBOutlet weak var friendshipstatusLabel: UILabel!
+    @IBOutlet weak var funnyStatusLabel: UILabel!
+    @IBOutlet weak var newyearStatusLabel: UILabel!
+    @IBOutlet weak var inspirationStatusLabel: UILabel!
+    @IBOutlet weak var birthdayStatusLabel: UILabel!
+    @IBOutlet weak var romanticStatusLabel: UILabel!
+
+    // Outlets of Images
 
     @IBOutlet weak var funnyImage: UIImageView!
     @IBOutlet weak var friendImage: UIImageView!
     @IBOutlet weak var newyearImage: UIImageView!
     @IBOutlet weak var inspireImage: UIImageView!
+    @IBOutlet weak var romanticImage: UIImageView!
+    @IBOutlet weak var birthdayImage: UIImageView!
     
     
+    // Mark : - Outlets of Categeory Labels
+    
+    @IBOutlet weak var friendshipLabel: UILabel!
+    @IBOutlet weak var funnyLabel: UILabel!
+    @IBOutlet weak var romanticLabel: UILabel!
+    @IBOutlet weak var birthdayLabel: UILabel!
+    @IBOutlet weak var inspireLabel: UILabel!
+    @IBOutlet weak var newyearLabel: UILabel!
+    
+    // Mark :- Quote Image Outlets 
+    
+    
+    @IBOutlet weak var quoteImage2: UIImageView!
+    @IBOutlet weak var quoteImage3: UIImageView!
+    @IBOutlet weak var quoteImage1: UIImageView!
+    
+    
+    //Mark :- Background Outlets
+    
+    @IBOutlet weak var backgroundButtonOutlet: UIButton!
+    @IBOutlet weak var backgrounImage: UIImageView!
+   
+
     // Mark : ViewDidLoad Function
     
     override func viewDidLoad() {
@@ -67,7 +88,6 @@ class ViewController: UIViewController {
         
         
         
-        // Do any additional setup after loading the view, typically from a nib.
     }
 
    
@@ -79,7 +99,7 @@ class ViewController: UIViewController {
         super.viewDidAppear(animated)
         
         
-        //Mark :- UI Animate Function
+    //Mark :- UIView Animate Function
         
         UIView.animate(withDuration: 1, animations: {
             self.romanticImage.alpha = 1
@@ -157,6 +177,9 @@ class ViewController: UIViewController {
     }
 
     
+    
+    
+    
     // Mark : - Share Sheet Function 
     
     func displayShareSheet(shareContent:String) {
@@ -165,75 +188,23 @@ class ViewController: UIViewController {
         present(activityViewController, animated: true, completion: {})
     }
     
-    @IBAction func inspirationButtonAction(_ sender: Any) {
+    
+    // Mark : - Sliding Pop Up Function
+    
+    func slidePopupWithView(){
         
-        inspirationCenterConstains.constant = 0
         backgroundButtonOutlet.alpha = 1
         
         UIView.animate(withDuration: 0.7 , animations: {
             
             self.view.layoutIfNeeded()
         })
-        
-        
         
     }
     
-    @IBAction func newyearButtonAction(_ sender: Any) {
-        
-        newyearCenterConstains.constant = 0
-        
-        backgroundButtonOutlet.alpha = 1
-        
-        UIView.animate(withDuration: 0.7 , animations: {
-            
-            self.view.layoutIfNeeded()
-        })
-        
-        
-        
-    }
     
-    @IBAction func friendshipButtonAction(_ sender: Any) {
-        
-        friendshipCenterContains.constant = 0
-        backgroundButtonOutlet.alpha = 1
-        
-        UIView.animate(withDuration: 0.7 , animations: {
-            
-            self.view.layoutIfNeeded()
-        })
-        
-        
-    }
     
-    @IBAction func funnButtonAction(_ sender: Any) {
-        
-        funnyCenterConstains.constant = 0
-        
-        backgroundButtonOutlet.alpha = 1
-        
-        UIView.animate(withDuration: 0.7 , animations: {
-            
-            self.view.layoutIfNeeded()
-        })
-        
-        
-    }
-    
-    @IBAction func romanticButtonAction(_ sender: Any) {
-        
-        romanticCenterConstrains.constant = 0
-        backgroundButtonOutlet.alpha = 1
-        
-        UIView.animate(withDuration: 0.7 , animations: {
-            
-            self.view.layoutIfNeeded()
-        })
-        
-        
-    }
-    @IBAction func backGroundButton(_ sender: UIButton) {
+    func tappingAnywhereToClosePopUp(){
         
         romanticCenterConstrains.constant = -600
         birthdayCenterConstrains.constant = -600
@@ -241,97 +212,154 @@ class ViewController: UIViewController {
         newyearCenterConstains.constant = -600
         friendshipCenterContains.constant = -600
         funnyCenterConstains.constant = -600
-       
-
         backgroundButtonOutlet.alpha = 0
+
         
     }
     
-
     
-    @IBAction func nextRomanticStatus(_ sender: Any) {
+    // Mark : - Action Buttons for pop up Views
+    
+    
+    @IBAction func inspirationButtonAction(_ sender: Any) {
         
+        inspirationCenterConstains.constant = 0
        
-        
-        romanticStatusLabel.text = DataModel().getRomanticData()
-
+        slidePopupWithView()
         
     }
     
-    @IBAction func shareRomanticStatus(_ sender: Any) {
+    @IBAction func newyearButtonAction(_ sender: Any) {
         
-
-        displayShareSheet(shareContent: romanticStatusLabel.text!)
+        newyearCenterConstains.constant = 0
         
-    
-        
+        slidePopupWithView()
     }
-   
+    
+    @IBAction func friendshipButtonAction(_ sender: Any) {
+        
+        friendshipCenterContains.constant = 0
+        slidePopupWithView()
+    }
+    
+    @IBAction func funnButtonAction(_ sender: Any) {
+        
+        funnyCenterConstains.constant = 0
+        
+        slidePopupWithView()
+    }
+    
+    @IBAction func romanticButtonAction(_ sender: Any) {
+        
+        romanticCenterConstrains.constant = 0
+        slidePopupWithView()
+    }
+    
     @IBAction func birthdayButtonAction(_ sender: Any) {
         
         birthdayCenterConstrains.constant = 0
-        backgroundButtonOutlet.alpha = 1
-        
-        UIView.animate(withDuration: 0.7 , animations: {
-            
-            self.view.layoutIfNeeded()
-        })
-        
+        slidePopupWithView()
+
         
     }
+    
+    // Mark:-  Background Button Action
+    
+    @IBAction func backGroundButton(_ sender: UIButton) {
+        
+        tappingAnywhereToClosePopUp()
+    
+        
+    }
+    
+    // Mark :- Status Changing Actions
+    
+    @IBAction func nextRomanticStatus(_ sender: Any) {
+        
+        romanticStatusLabel.text = DataModel().getRomanticData()
+
+    }
+    
     @IBAction func nextBirthdayButton(_ sender: Any) {
         
         
         birthdayStatusLabel.text = DataModel().getBirthdayData()
 
-        
-        
     }
-    @IBAction func shareBirthdayButton(_ sender: Any) {
-        
-        
-        displayShareSheet(shareContent:birthdayStatusLabel.text!)
-
-        
-        
-    }
-    
+   
     @IBAction func nextInspirationAction(_ sender: Any) {
         
         
-    }
-    
-    @IBAction func shareInspirationAction(_ sender: Any) {
-        
-        
+        inspirationStatusLabel.text = DataModel().getInspirationData()
+
     }
     
     @IBAction func nextNewyearAction(_ sender: Any) {
         
         
+        newyearStatusLabel.text = DataModel().newyearData()
+
+        
+        
     }
-    @IBAction func shareNewYear(_ sender: Any) {
-    }
-    
-    
+  
     @IBAction func nextFriendship(_ sender: Any) {
         
         
+        friendshipstatusLabel.text = DataModel().friendshipData()
+        
     }
     
-    
-    @IBAction func shareFriendship(_ sender: Any) {
-    }
-    
+
     @IBAction func nextFunnyAction(_ sender: Any) {
         
         
+        funnyStatusLabel.text = DataModel().funnyData()
+        
+
     }
+    
+    
+    
+    @IBAction func shareFriendship(_ sender: Any) {
+        
+        displayShareSheet(shareContent:friendshipstatusLabel.text!)
+        
+        
+    }
+    
+    // Mark :- Share Status Actions
     
     @IBAction func shareFunnyAction(_ sender: Any) {
         
+        displayShareSheet(shareContent:funnyStatusLabel.text!)
+    }
+    
+    @IBAction func shareRomanticStatus(_ sender: Any) {
+        
+        displayShareSheet(shareContent: romanticStatusLabel.text!)
         
     }
+    
+    @IBAction func shareBirthdayButton(_ sender: Any) {
+        
+        displayShareSheet(shareContent:birthdayStatusLabel.text!)
+        
+    }
+    
+    @IBAction func shareInspirationAction(_ sender: Any) {
+        
+        displayShareSheet(shareContent:inspirationStatusLabel.text!)
+    
+    }
+    
+    @IBAction func shareNewYear(_ sender: Any) {
+        
+        displayShareSheet(shareContent:newyearStatusLabel.text!)
+        
+    }
+    
+    
 }
 
 

@@ -176,7 +176,7 @@
                                     <action selector="backGroundButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="diw-B4-L3Q"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Friendship" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kB8-Gz-Pz5">
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Friendship" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kB8-Gz-Pz5">
                                 <rect key="frame" x="65" y="706" width="74" height="27"/>
                                 <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -215,8 +215,8 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HiO-gv-VkE" userLabel="RomanticView" customClass="PopUpViewCustom" customModule="SocialStatus" customModuleProvider="target">
                                 <rect key="frame" x="-580" y="184" width="373" height="368"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Being someone’s first love may be great, but to be their last is beyond perfect." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KOz-Rk-4tJ">
-                                        <rect key="frame" x="16" y="164.33333333333331" width="341" height="40.666666666666686"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KOz-Rk-4tJ">
+                                        <rect key="frame" x="16" y="184" width="341" height="0.0"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -324,8 +324,8 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oaa-tl-jaU" userLabel="BirthdayView" customClass="PopUpViewCustom" customModule="SocialStatus" customModuleProvider="target">
                                 <rect key="frame" x="-580" y="184" width="373" height="368"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Happy birthday, my friend. I can’t imagine celebrating with anyone else." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1QL-xC-dul">
-                                        <rect key="frame" x="16" y="164.33333333333331" width="341" height="40.666666666666686"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1QL-xC-dul">
+                                        <rect key="frame" x="16" y="184" width="341" height="0.0"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -438,8 +438,8 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yl3-c0-NhL" userLabel="InspireationView" customClass="PopUpViewCustom" customModule="SocialStatus" customModuleProvider="target">
                                 <rect key="frame" x="-580" y="184" width="373" height="368"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Happy birthday, my friend. I can’t imagine celebrating with anyone else." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rA4-fF-5kv">
-                                        <rect key="frame" x="16" y="164.33333333333331" width="341" height="40.666666666666686"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rA4-fF-5kv">
+                                        <rect key="frame" x="16" y="184" width="341" height="0.0"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -556,8 +556,8 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wad-WQ-JRl" userLabel="NewYearView" customClass="PopUpViewCustom" customModule="SocialStatus" customModuleProvider="target">
                                 <rect key="frame" x="-580" y="184" width="373" height="368"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Happy birthday, my friend. I can’t imagine celebrating with anyone else." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g8A-7H-wdk">
-                                        <rect key="frame" x="16" y="164.33333333333331" width="341" height="40.666666666666686"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g8A-7H-wdk">
+                                        <rect key="frame" x="16" y="184" width="341" height="0.0"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -674,8 +674,8 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e23-K8-Tjh" userLabel="Friendship" customClass="PopUpViewCustom" customModule="SocialStatus" customModuleProvider="target">
                                 <rect key="frame" x="-580" y="184" width="373" height="368"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Happy birthday, my friend. I can’t imagine celebrating with anyone else." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S7V-ju-6SH">
-                                        <rect key="frame" x="16" y="164.33333333333331" width="341" height="40.666666666666686"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S7V-ju-6SH">
+                                        <rect key="frame" x="16" y="184" width="341" height="0.0"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -786,8 +786,8 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xkL-Dk-TGg" userLabel="Funny" customClass="PopUpViewCustom" customModule="SocialStatus" customModuleProvider="target">
                                 <rect key="frame" x="-580" y="184" width="373" height="368"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Happy birthday, my friend. I can’t imagine celebrating with anyone else." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JSn-jk-IfG">
-                                        <rect key="frame" x="16" y="164.33333333333331" width="341" height="40.666666666666686"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JSn-jk-IfG">
+                                        <rect key="frame" x="16" y="184" width="341" height="0.0"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -805,6 +805,7 @@
                                         </state>
                                         <connections>
                                             <action selector="nextBirthdayButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XEf-Ig-35p"/>
+                                            <action selector="nextFunnyAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fTN-JS-Hey"/>
                                             <action selector="nextRomanticStatus:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QT5-qy-YsL"/>
                                         </connections>
                                     </button>
@@ -934,6 +935,7 @@
                             <constraint firstItem="xkL-Dk-TGg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-600" id="KJf-CK-BGf"/>
                             <constraint firstItem="mMe-RO-5WW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="8" id="KVa-YS-5u1"/>
                             <constraint firstItem="e23-K8-Tjh" firstAttribute="width" secondItem="wad-WQ-JRl" secondAttribute="width" id="LJX-8h-Ky8"/>
+                            <constraint firstItem="kB8-Gz-Pz5" firstAttribute="leading" secondItem="iaS-Tt-rP3" secondAttribute="leading" id="Lck-qJ-6Te"/>
                             <constraint firstItem="Sdn-aW-Se4" firstAttribute="centerX" secondItem="4IY-be-XQm" secondAttribute="centerX" id="Lhx-f2-Ghu"/>
                             <constraint firstItem="7Zg-TR-7dJ" firstAttribute="centerX" secondItem="ffE-FJ-EGN" secondAttribute="centerX" id="Lj2-jn-GwK"/>
                             <constraint firstItem="Yl3-c0-NhL" firstAttribute="height" secondItem="Oaa-tl-jaU" secondAttribute="height" id="LzI-QQ-YOa"/>
@@ -941,17 +943,17 @@
                             <constraint firstItem="dZM-QT-xZd" firstAttribute="centerX" secondItem="b9T-Cg-rYz" secondAttribute="centerX" id="NVK-Zz-PK6"/>
                             <constraint firstItem="e23-K8-Tjh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-600" id="QQ6-OW-4UT"/>
                             <constraint firstItem="8Bm-wx-ie5" firstAttribute="top" secondItem="nKM-em-MRY" secondAttribute="bottom" id="QXI-OH-UUR"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="kB8-Gz-Pz5" secondAttribute="bottom" constant="3" id="UKK-Fk-fj8"/>
                             <constraint firstItem="Yl3-c0-NhL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-600" id="Vvd-wp-7Pb"/>
-                            <constraint firstItem="kB8-Gz-Pz5" firstAttribute="centerY" secondItem="7Zg-TR-7dJ" secondAttribute="centerY" id="X1f-mM-9hK"/>
                             <constraint firstItem="4ic-Ua-Naa" firstAttribute="top" secondItem="jip-oH-98u" secondAttribute="bottom" constant="1.1368683772161603e-13" id="XWF-c7-E9P"/>
                             <constraint firstItem="HiO-gv-VkE" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.5" id="YeE-9C-oo0"/>
                             <constraint firstItem="mMe-RO-5WW" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="5" id="Yry-hy-zhY"/>
+                            <constraint firstItem="kB8-Gz-Pz5" firstAttribute="centerY" secondItem="7Zg-TR-7dJ" secondAttribute="centerY" id="ZxU-GA-W1G"/>
                             <constraint firstItem="ffE-FJ-EGN" firstAttribute="centerX" secondItem="b9T-Cg-rYz" secondAttribute="centerX" id="bc7-Q4-kGX"/>
                             <constraint firstItem="xkL-Dk-TGg" firstAttribute="height" secondItem="e23-K8-Tjh" secondAttribute="height" id="eF8-HV-j2k"/>
                             <constraint firstItem="iaS-Tt-rP3" firstAttribute="top" secondItem="mMe-RO-5WW" secondAttribute="bottom" id="ee4-dI-HiP"/>
                             <constraint firstItem="Oaa-tl-jaU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-600" id="f7f-93-PCC"/>
                             <constraint firstItem="HiO-gv-VkE" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.9" id="fNZ-4B-oYA"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="kB8-Gz-Pz5" secondAttribute="bottom" constant="3" id="gd4-xd-CGF"/>
                             <constraint firstItem="b9T-Cg-rYz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ge7-f6-e0R"/>
                             <constraint firstItem="HiO-gv-VkE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-600" id="h23-g0-Pte"/>
                             <constraint firstItem="Oaa-tl-jaU" firstAttribute="width" secondItem="HiO-gv-VkE" secondAttribute="width" id="h6T-DT-ydy"/>
@@ -967,7 +969,6 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="jip-oH-98u" secondAttribute="bottom" constant="30" id="qqv-TW-qAk"/>
                             <constraint firstItem="xkL-Dk-TGg" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="rAi-mB-eF3"/>
                             <constraint firstItem="wad-WQ-JRl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-600" id="rVH-gI-nTC"/>
-                            <constraint firstItem="kB8-Gz-Pz5" firstAttribute="leading" secondItem="iaS-Tt-rP3" secondAttribute="leading" id="rvw-cv-rfs"/>
                             <constraint firstItem="nKM-em-MRY" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="teM-Va-jlR"/>
                             <constraint firstItem="wad-WQ-JRl" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="tsY-2h-mOW"/>
                             <constraint firstItem="Oaa-tl-jaU" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="utX-1g-hK6"/>
@@ -992,7 +993,7 @@
                         <outlet property="birthdayViewPopUp" destination="Oaa-tl-jaU" id="Nrz-bo-lz2"/>
                         <outlet property="friendImage" destination="BNA-NO-cvO" id="exs-dn-7gP"/>
                         <outlet property="friendshipCenterContains" destination="QQ6-OW-4UT" id="7KZ-Mp-Kyg"/>
-                        <outlet property="friendshipLabel" destination="S7V-ju-6SH" id="FWe-ye-FYG"/>
+                        <outlet property="friendshipLabel" destination="kB8-Gz-Pz5" id="wTI-vH-183"/>
                         <outlet property="friendshipPopUpView" destination="e23-K8-Tjh" id="Cfp-IY-83P"/>
                         <outlet property="friendshipstatusLabel" destination="S7V-ju-6SH" id="hjA-Nl-4Cq"/>
                         <outlet property="funnyCenterConstains" destination="KJf-CK-BGf" id="BJx-2S-aCF"/>
