@@ -14,6 +14,8 @@
 		8F33270B1E7DAF1000454770 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F3327091E7DAF1000454770 /* LaunchScreen.storyboard */; };
 		8F3327161E7DAF1000454770 /* SocialStatusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3327151E7DAF1000454770 /* SocialStatusTests.swift */; };
 		8F3327211E7DAF1000454770 /* SocialStatusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3327201E7DAF1000454770 /* SocialStatusUITests.swift */; };
+		8F9B8D771E83B77E00D063AA /* PopUpViewCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9B8D761E83B77E00D063AA /* PopUpViewCustom.swift */; };
+		8FC0E4101E7EE8D900B585CF /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC0E40F1E7EE8D900B585CF /* DataModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		8F33271C1E7DAF1000454770 /* SocialStatusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SocialStatusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F3327201E7DAF1000454770 /* SocialStatusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialStatusUITests.swift; sourceTree = "<group>"; };
 		8F3327221E7DAF1000454770 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F9B8D761E83B77E00D063AA /* PopUpViewCustom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopUpViewCustom.swift; sourceTree = "<group>"; };
+		8FC0E40F1E7EE8D900B585CF /* DataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,11 +101,11 @@
 		8F3326FF1E7DAF1000454770 /* SocialStatus */ = {
 			isa = PBXGroup;
 			children = (
-				8F3327001E7DAF1000454770 /* AppDelegate.swift */,
-				8F3327021E7DAF1000454770 /* ViewController.swift */,
-				8F3327041E7DAF1000454770 /* Main.storyboard */,
-				8F3327071E7DAF1000454770 /* Assets.xcassets */,
-				8F3327091E7DAF1000454770 /* LaunchScreen.storyboard */,
+				8F9B8D751E83B74F00D063AA /* CustomClass */,
+				8F9B8D741E83B72700D063AA /* AppDelegate */,
+				8F9B8D731E83B70400D063AA /* MainVC */,
+				8F9B8D721E83B6E600D063AA /* Resources */,
+				8F9B8D701E83B6B800D063AA /* DataModel */,
 				8F33270C1E7DAF1000454770 /* Info.plist */,
 			);
 			path = SocialStatus;
@@ -123,6 +127,48 @@
 				8F3327221E7DAF1000454770 /* Info.plist */,
 			);
 			path = SocialStatusUITests;
+			sourceTree = "<group>";
+		};
+		8F9B8D701E83B6B800D063AA /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				8FC0E40F1E7EE8D900B585CF /* DataModel.swift */,
+			);
+			name = DataModel;
+			sourceTree = "<group>";
+		};
+		8F9B8D721E83B6E600D063AA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8F3327041E7DAF1000454770 /* Main.storyboard */,
+				8F3327091E7DAF1000454770 /* LaunchScreen.storyboard */,
+				8F3327071E7DAF1000454770 /* Assets.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		8F9B8D731E83B70400D063AA /* MainVC */ = {
+			isa = PBXGroup;
+			children = (
+				8F3327021E7DAF1000454770 /* ViewController.swift */,
+			);
+			name = MainVC;
+			sourceTree = "<group>";
+		};
+		8F9B8D741E83B72700D063AA /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				8F3327001E7DAF1000454770 /* AppDelegate.swift */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		8F9B8D751E83B74F00D063AA /* CustomClass */ = {
+			isa = PBXGroup;
+			children = (
+				8F9B8D761E83B77E00D063AA /* PopUpViewCustom.swift */,
+			);
+			name = CustomClass;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +305,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FC0E4101E7EE8D900B585CF /* DataModel.swift in Sources */,
 				8F3327031E7DAF1000454770 /* ViewController.swift in Sources */,
+				8F9B8D771E83B77E00D063AA /* PopUpViewCustom.swift in Sources */,
 				8F3327011E7DAF1000454770 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -505,6 +553,7 @@
 				8F3327271E7DAF1000454770 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8F3327281E7DAF1000454770 /* Build configuration list for PBXNativeTarget "SocialStatusTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +562,7 @@
 				8F33272A1E7DAF1000454770 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8F33272B1E7DAF1000454770 /* Build configuration list for PBXNativeTarget "SocialStatusUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +571,7 @@
 				8F33272D1E7DAF1000454770 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
