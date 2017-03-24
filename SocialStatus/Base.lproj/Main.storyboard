@@ -94,6 +94,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xzi-HN-qmX" userLabel="InspireButton">
                                         <rect key="frame" x="8" y="8" width="171" height="168"/>
                                         <state key="normal" backgroundImage="OvalButton"/>
+                                        <connections>
+                                            <action selector="inspirationButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="efq-fs-lsz"/>
+                                        </connections>
                                     </button>
                                     <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Inspire" translatesAutoresizingMaskIntoConstraints="NO" id="UhJ-4b-ag6" userLabel="Inspire">
                                         <rect key="frame" x="65" y="55" width="58" height="74"/>
@@ -101,6 +104,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="khm-fB-E9W" userLabel="NewYearButton">
                                         <rect key="frame" x="219" y="8" width="171" height="168"/>
                                         <state key="normal" backgroundImage="OvalButton"/>
+                                        <connections>
+                                            <action selector="newyearButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1pT-57-JQA"/>
+                                        </connections>
                                     </button>
                                     <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Newyear" translatesAutoresizingMaskIntoConstraints="NO" id="4IY-be-XQm" userLabel="NewYear">
                                         <rect key="frame" x="266" y="51" width="76" height="82"/>
@@ -127,6 +133,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ghD-fF-WZQ" userLabel="FriendshipButton">
                                         <rect key="frame" x="8" y="8" width="171" height="168"/>
                                         <state key="normal" backgroundImage="OvalButton"/>
+                                        <connections>
+                                            <action selector="friendshipButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JVB-ye-4W4"/>
+                                        </connections>
                                     </button>
                                     <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="friendship" translatesAutoresizingMaskIntoConstraints="NO" id="BNA-NO-cvO" userLabel="Friendship">
                                         <rect key="frame" x="47" y="48" width="93" height="89"/>
@@ -134,6 +143,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vmG-1P-QaB" userLabel="FunnyButton">
                                         <rect key="frame" x="219" y="8" width="171" height="168"/>
                                         <state key="normal" backgroundImage="OvalButton"/>
+                                        <connections>
+                                            <action selector="funnButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jST-wu-6ce"/>
+                                        </connections>
                                     </button>
                                     <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="funny" translatesAutoresizingMaskIntoConstraints="NO" id="gdi-2K-71r" userLabel="Funny">
                                         <rect key="frame" x="264" y="47" width="82" height="90"/>
@@ -164,7 +176,7 @@
                                     <action selector="backGroundButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="diw-B4-L3Q"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Friendship" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kB8-Gz-Pz5">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Friendship" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kB8-Gz-Pz5">
                                 <rect key="frame" x="65" y="706" width="74" height="27"/>
                                 <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -424,16 +436,16 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yl3-c0-NhL" userLabel="InspireationView" customClass="PopUpViewCustom" customModule="SocialStatus" customModuleProvider="target">
-                                <rect key="frame" x="-579.66666666666663" y="184" width="373" height="368"/>
+                                <rect key="frame" x="-580" y="184" width="373" height="368"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Happy birthday, my friend. I can’t imagine celebrating with anyone else." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rA4-fF-5kv">
-                                        <rect key="frame" x="15.666666666666629" y="164.33333333333331" width="341" height="40.666666666666686"/>
+                                        <rect key="frame" x="16" y="164.33333333333331" width="341" height="40.666666666666686"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jzh-nD-Etm" userLabel="Next Inspration">
-                                        <rect key="frame" x="-0.33333333333337123" y="323" width="373" height="45"/>
+                                        <rect key="frame" x="0.0" y="323" width="373" height="45"/>
                                         <color key="backgroundColor" red="0.92860704660000004" green="0.29591137169999998" blue="0.44303110239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="45" id="0i4-Mj-Uaa"/>
@@ -444,27 +456,28 @@
                                         </state>
                                         <connections>
                                             <action selector="nextBirthdayButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5uH-V2-Mck"/>
+                                            <action selector="nextInspirationAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mEu-Z6-dRq"/>
                                             <action selector="nextRomanticStatus:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jxS-NR-4vN"/>
                                         </connections>
                                     </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="quL-hJ-Hnr">
-                                        <rect key="frame" x="-0.33333333333337123" y="0.0" width="373" height="50"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="373" height="50"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Inspiration" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NRc-Bb-JhN" userLabel="Inspiration">
-                                                <rect key="frame" x="145.66666666666669" y="15" width="80" height="21"/>
+                                                <rect key="frame" x="146" y="15" width="80" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Inspire" translatesAutoresizingMaskIntoConstraints="NO" id="Tfo-oK-sXV" userLabel="Inspiration">
-                                                <rect key="frame" x="89.666666666666686" y="5" width="40" height="40"/>
+                                                <rect key="frame" x="90" y="5" width="40" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="0Oh-cg-tZy"/>
                                                     <constraint firstAttribute="width" constant="40" id="NPk-ci-S9H"/>
                                                 </constraints>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ric-f9-a5V" userLabel="ShareInspiration">
-                                                <rect key="frame" x="324.66666666666663" y="6" width="40" height="40"/>
+                                                <rect key="frame" x="325" y="6" width="40" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="40" id="mbL-lN-cuS"/>
                                                     <constraint firstAttribute="height" constant="40" id="tyJ-ld-YcR"/>
@@ -472,11 +485,12 @@
                                                 <state key="normal" backgroundImage="share"/>
                                                 <connections>
                                                     <action selector="shareBirthdayButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ooq-bJ-rQE"/>
+                                                    <action selector="shareInspirationAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XSO-ea-MXb"/>
                                                     <action selector="shareRomanticStatus:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Crv-zr-onI"/>
                                                 </connections>
                                             </button>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="quote" translatesAutoresizingMaskIntoConstraints="NO" id="KGa-nM-nmE">
-                                                <rect key="frame" x="6.6666666666666288" y="8" width="34" height="34"/>
+                                                <rect key="frame" x="7" y="8" width="34" height="34"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="34" id="4KM-s0-He5"/>
                                                     <constraint firstAttribute="height" constant="34" id="k4F-j3-gp8"/>
@@ -500,7 +514,7 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HUs-Nu-aJI">
-                                        <rect key="frame" x="-0.33333333333337123" y="50" width="373" height="2"/>
+                                        <rect key="frame" x="0.0" y="50" width="373" height="2"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="2" id="k5m-dX-rbU"/>
@@ -540,16 +554,16 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wad-WQ-JRl" userLabel="NewYearView" customClass="PopUpViewCustom" customModule="SocialStatus" customModuleProvider="target">
-                                <rect key="frame" x="-579.66666666666663" y="184" width="373" height="368"/>
+                                <rect key="frame" x="-580" y="184" width="373" height="368"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Happy birthday, my friend. I can’t imagine celebrating with anyone else." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g8A-7H-wdk">
-                                        <rect key="frame" x="15.666666666666629" y="164.33333333333331" width="341" height="40.666666666666686"/>
+                                        <rect key="frame" x="16" y="164.33333333333331" width="341" height="40.666666666666686"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bxa-60-C0y" userLabel="Next NewYear">
-                                        <rect key="frame" x="-0.66666666666674246" y="323" width="373" height="45"/>
+                                        <rect key="frame" x="0.0" y="323" width="373" height="45"/>
                                         <color key="backgroundColor" red="0.92860704660000004" green="0.29591137169999998" blue="0.44303110239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="45" id="3OQ-xo-Tdd"/>
@@ -560,27 +574,28 @@
                                         </state>
                                         <connections>
                                             <action selector="nextBirthdayButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OXE-WQ-fhl"/>
+                                            <action selector="nextNewyearAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hnm-fu-NHi"/>
                                             <action selector="nextRomanticStatus:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RtH-Qb-2yG"/>
                                         </connections>
                                     </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="41y-LO-xMY">
-                                        <rect key="frame" x="-0.66666666666674246" y="0.0" width="373" height="50"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="373" height="50"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NewYear" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BKb-Cb-PsA">
-                                                <rect key="frame" x="152.66666666666669" y="15" width="67.666666666666686" height="21"/>
+                                                <rect key="frame" x="153" y="15" width="68" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Newyear" translatesAutoresizingMaskIntoConstraints="NO" id="WY4-r2-wCJ" userLabel="NewYear">
-                                                <rect key="frame" x="96.666666666666686" y="5" width="40" height="40"/>
+                                                <rect key="frame" x="97" y="5" width="40" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="KHk-HL-6qU"/>
                                                     <constraint firstAttribute="width" constant="40" id="n3T-tL-2x0"/>
                                                 </constraints>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P1P-8w-Io5" userLabel="ShareNewYear">
-                                                <rect key="frame" x="324.33333333333337" y="6" width="40" height="40"/>
+                                                <rect key="frame" x="325" y="6" width="40" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="C3Y-PP-zUw"/>
                                                     <constraint firstAttribute="width" constant="40" id="baT-gs-l3e"/>
@@ -588,11 +603,12 @@
                                                 <state key="normal" backgroundImage="share"/>
                                                 <connections>
                                                     <action selector="shareBirthdayButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4cE-Nx-rCu"/>
+                                                    <action selector="shareNewYear:" destination="BYZ-38-t0r" eventType="touchUpInside" id="stF-bY-8vi"/>
                                                     <action selector="shareRomanticStatus:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ocv-21-Cqj"/>
                                                 </connections>
                                             </button>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="quote" translatesAutoresizingMaskIntoConstraints="NO" id="SUI-NF-Z4P">
-                                                <rect key="frame" x="6.3333333333333712" y="8" width="34" height="34"/>
+                                                <rect key="frame" x="7" y="8" width="34" height="34"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="34" id="5Xh-AU-m7n"/>
                                                     <constraint firstAttribute="height" constant="34" id="tKV-gy-VE7"/>
@@ -616,14 +632,14 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p4M-Bn-MSu">
-                                        <rect key="frame" x="-0.66666666666674246" y="50" width="373" height="2"/>
+                                        <rect key="frame" x="0.0" y="50" width="373" height="2"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="2" id="PKU-MA-HeO"/>
                                         </constraints>
                                     </view>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="quote" translatesAutoresizingMaskIntoConstraints="NO" id="awr-4z-l95">
-                                        <rect key="frame" x="329.66666666666663" y="328" width="34" height="34"/>
+                                        <rect key="frame" x="330" y="328" width="34" height="34"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="34" id="ie2-RZ-54t"/>
                                             <constraint firstAttribute="width" constant="34" id="m38-mW-NBR"/>
@@ -656,10 +672,10 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e23-K8-Tjh" userLabel="Friendship" customClass="PopUpViewCustom" customModule="SocialStatus" customModuleProvider="target">
-                                <rect key="frame" x="-579.66666666666663" y="184" width="373" height="368"/>
+                                <rect key="frame" x="-580" y="184" width="373" height="368"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Happy birthday, my friend. I can’t imagine celebrating with anyone else." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S7V-ju-6SH">
-                                        <rect key="frame" x="15.333333333333258" y="164.33333333333331" width="341" height="40.666666666666686"/>
+                                        <rect key="frame" x="16" y="164.33333333333331" width="341" height="40.666666666666686"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -676,6 +692,7 @@
                                         </state>
                                         <connections>
                                             <action selector="nextBirthdayButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ydw-ke-jyf"/>
+                                            <action selector="nextFriendship:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dWf-Fq-DLL"/>
                                             <action selector="nextRomanticStatus:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dWG-PP-Xom"/>
                                         </connections>
                                     </button>
@@ -683,24 +700,25 @@
                                         <rect key="frame" x="0.0" y="0.0" width="373" height="50"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Friendship" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bke-j6-FVI">
-                                                <rect key="frame" x="145.99999999999994" y="15" width="80.333333333333371" height="21"/>
+                                                <rect key="frame" x="146" y="15" width="80" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="friendship" translatesAutoresizingMaskIntoConstraints="NO" id="ed9-JV-WiV" userLabel="NewYear">
-                                                <rect key="frame" x="89.999999999999943" y="5" width="40" height="40"/>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="friendship" translatesAutoresizingMaskIntoConstraints="NO" id="ed9-JV-WiV" userLabel="friend">
+                                                <rect key="frame" x="90" y="5" width="40" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="40" id="M9G-Ce-xyl"/>
                                                     <constraint firstAttribute="height" constant="40" id="VBa-VG-S5n"/>
                                                 </constraints>
                                             </imageView>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lAA-9S-ThE" userLabel="ShareNewYear">
-                                                <rect key="frame" x="324.33333333333326" y="6" width="40" height="40"/>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lAA-9S-ThE" userLabel="Sharefriend">
+                                                <rect key="frame" x="324" y="6" width="40" height="40"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" backgroundImage="share"/>
                                                 <connections>
                                                     <action selector="shareBirthdayButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2HB-He-mj8"/>
+                                                    <action selector="shareFriendship:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Shz-fC-fp4"/>
                                                     <action selector="shareRomanticStatus:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eUY-nX-lh9"/>
                                                 </connections>
                                             </button>
@@ -733,7 +751,7 @@
                                         </constraints>
                                     </view>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="quote" translatesAutoresizingMaskIntoConstraints="NO" id="0bI-bk-rjk">
-                                        <rect key="frame" x="329.33333333333326" y="328" width="34" height="34"/>
+                                        <rect key="frame" x="330" y="328" width="34" height="34"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="34" id="5Ac-9C-Yey"/>
                                             <constraint firstAttribute="width" constant="34" id="fOc-bp-fzA"/>
@@ -766,16 +784,16 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xkL-Dk-TGg" userLabel="Funny" customClass="PopUpViewCustom" customModule="SocialStatus" customModuleProvider="target">
-                                <rect key="frame" x="-579.66666666666663" y="184" width="373" height="368"/>
+                                <rect key="frame" x="-580" y="184" width="373" height="368"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Happy birthday, my friend. I can’t imagine celebrating with anyone else." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JSn-jk-IfG">
-                                        <rect key="frame" x="15" y="164.33333333333331" width="341" height="40.666666666666686"/>
+                                        <rect key="frame" x="16" y="164.33333333333331" width="341" height="40.666666666666686"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tXp-FZ-dl4" userLabel="Next Funny">
-                                        <rect key="frame" x="-0.33333333333325754" y="323" width="373" height="45"/>
+                                        <rect key="frame" x="0.0" y="323" width="373" height="45"/>
                                         <color key="backgroundColor" red="0.92860704660000004" green="0.29591137169999998" blue="0.44303110239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="45" id="jEb-Ya-RlH"/>
@@ -791,23 +809,23 @@
                                         </connections>
                                     </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZbR-Fp-3YO">
-                                        <rect key="frame" x="-0.33333333333325754" y="0.0" width="373" height="50"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="373" height="50"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Funny" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vNf-bT-erc">
-                                                <rect key="frame" x="162.66666666666669" y="15" width="46.666666666666686" height="21"/>
+                                                <rect key="frame" x="163" y="15" width="47" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="funny" translatesAutoresizingMaskIntoConstraints="NO" id="ldT-x4-beC" userLabel="NewYear">
-                                                <rect key="frame" x="106.66666666666669" y="5" width="40" height="40"/>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="funny" translatesAutoresizingMaskIntoConstraints="NO" id="ldT-x4-beC">
+                                                <rect key="frame" x="107" y="5" width="40" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="hqj-vp-2sZ"/>
                                                     <constraint firstAttribute="width" constant="40" id="uVl-GJ-0Rh"/>
                                                 </constraints>
                                             </imageView>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rLY-os-ogL" userLabel="ShareNewYear">
-                                                <rect key="frame" x="324" y="6" width="40" height="40"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rLY-os-ogL" userLabel="ShareFunny">
+                                                <rect key="frame" x="325" y="6" width="40" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="YlG-sl-3rA"/>
                                                     <constraint firstAttribute="width" constant="40" id="jjV-Ef-t3B"/>
@@ -815,11 +833,12 @@
                                                 <state key="normal" backgroundImage="share"/>
                                                 <connections>
                                                     <action selector="shareBirthdayButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GLo-cR-aBC"/>
+                                                    <action selector="shareFunnyAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TKI-F0-zOw"/>
                                                     <action selector="shareRomanticStatus:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1db-ZB-hxK"/>
                                                 </connections>
                                             </button>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="quote" translatesAutoresizingMaskIntoConstraints="NO" id="Bak-Qv-fwu">
-                                                <rect key="frame" x="5.6666666666667425" y="8" width="34" height="34"/>
+                                                <rect key="frame" x="6" y="8" width="34" height="34"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="34" id="SA1-cI-5Yy"/>
                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="34" id="Tec-QR-onY"/>
@@ -847,7 +866,7 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QzC-Gs-UVb">
-                                        <rect key="frame" x="-0.33333333333325754" y="50" width="373" height="2"/>
+                                        <rect key="frame" x="0.0" y="50" width="373" height="2"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="2" id="JnT-TR-uxB"/>
@@ -855,7 +874,7 @@
                                         </constraints>
                                     </view>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="quote" translatesAutoresizingMaskIntoConstraints="NO" id="gDP-gb-DWf">
-                                        <rect key="frame" x="330.66666666666674" y="328" width="34" height="34"/>
+                                        <rect key="frame" x="331" y="328" width="34" height="34"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="34" id="1ua-MQ-nLB"/>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="34" id="2F2-Th-Fmb"/>
@@ -907,7 +926,6 @@
                             <constraint firstItem="xzi-HN-qmX" firstAttribute="width" secondItem="wgK-Ip-Rm8" secondAttribute="width" id="9do-NJ-C1S"/>
                             <constraint firstAttribute="trailing" secondItem="mMe-RO-5WW" secondAttribute="trailing" constant="8" id="9xd-fG-EYa"/>
                             <constraint firstItem="e23-K8-Tjh" firstAttribute="height" secondItem="wad-WQ-JRl" secondAttribute="height" id="Cb8-67-5Ub"/>
-                            <constraint firstItem="kB8-Gz-Pz5" firstAttribute="top" secondItem="jip-oH-98u" secondAttribute="bottom" id="CzW-wT-lXc"/>
                             <constraint firstAttribute="trailing" secondItem="jip-oH-98u" secondAttribute="trailing" constant="8" id="Dpt-at-xmO"/>
                             <constraint firstItem="Yl3-c0-NhL" firstAttribute="width" secondItem="Oaa-tl-jaU" secondAttribute="width" id="G5u-FI-qsi"/>
                             <constraint firstItem="wad-WQ-JRl" firstAttribute="height" secondItem="Yl3-c0-NhL" secondAttribute="height" id="GLp-aW-4H5"/>
@@ -923,8 +941,9 @@
                             <constraint firstItem="dZM-QT-xZd" firstAttribute="centerX" secondItem="b9T-Cg-rYz" secondAttribute="centerX" id="NVK-Zz-PK6"/>
                             <constraint firstItem="e23-K8-Tjh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-600" id="QQ6-OW-4UT"/>
                             <constraint firstItem="8Bm-wx-ie5" firstAttribute="top" secondItem="nKM-em-MRY" secondAttribute="bottom" id="QXI-OH-UUR"/>
-                            <constraint firstItem="7Zg-TR-7dJ" firstAttribute="centerY" secondItem="kB8-Gz-Pz5" secondAttribute="centerY" id="VJB-2p-jf1"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="kB8-Gz-Pz5" secondAttribute="bottom" constant="3" id="UKK-Fk-fj8"/>
                             <constraint firstItem="Yl3-c0-NhL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-600" id="Vvd-wp-7Pb"/>
+                            <constraint firstItem="kB8-Gz-Pz5" firstAttribute="centerY" secondItem="7Zg-TR-7dJ" secondAttribute="centerY" id="X1f-mM-9hK"/>
                             <constraint firstItem="4ic-Ua-Naa" firstAttribute="top" secondItem="jip-oH-98u" secondAttribute="bottom" constant="1.1368683772161603e-13" id="XWF-c7-E9P"/>
                             <constraint firstItem="HiO-gv-VkE" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.5" id="YeE-9C-oo0"/>
                             <constraint firstItem="mMe-RO-5WW" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="5" id="Yry-hy-zhY"/>
@@ -948,8 +967,8 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="jip-oH-98u" secondAttribute="bottom" constant="30" id="qqv-TW-qAk"/>
                             <constraint firstItem="xkL-Dk-TGg" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="rAi-mB-eF3"/>
                             <constraint firstItem="wad-WQ-JRl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-600" id="rVH-gI-nTC"/>
+                            <constraint firstItem="kB8-Gz-Pz5" firstAttribute="leading" secondItem="iaS-Tt-rP3" secondAttribute="leading" id="rvw-cv-rfs"/>
                             <constraint firstItem="nKM-em-MRY" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="teM-Va-jlR"/>
-                            <constraint firstItem="kB8-Gz-Pz5" firstAttribute="centerX" secondItem="BNA-NO-cvO" secondAttribute="centerX" id="tlR-bB-aJP"/>
                             <constraint firstItem="wad-WQ-JRl" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="tsY-2h-mOW"/>
                             <constraint firstItem="Oaa-tl-jaU" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="utX-1g-hK6"/>
                             <constraint firstItem="Yl3-c0-NhL" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="vCp-EP-h24"/>
@@ -972,13 +991,25 @@
                         <outlet property="birthdayStatusLabel" destination="1QL-xC-dul" id="WLG-q3-pzk"/>
                         <outlet property="birthdayViewPopUp" destination="Oaa-tl-jaU" id="Nrz-bo-lz2"/>
                         <outlet property="friendImage" destination="BNA-NO-cvO" id="exs-dn-7gP"/>
-                        <outlet property="friendshipLabel" destination="kB8-Gz-Pz5" id="MOz-4X-rWY"/>
+                        <outlet property="friendshipCenterContains" destination="QQ6-OW-4UT" id="7KZ-Mp-Kyg"/>
+                        <outlet property="friendshipLabel" destination="S7V-ju-6SH" id="FWe-ye-FYG"/>
+                        <outlet property="friendshipPopUpView" destination="e23-K8-Tjh" id="Cfp-IY-83P"/>
+                        <outlet property="friendshipstatusLabel" destination="S7V-ju-6SH" id="hjA-Nl-4Cq"/>
+                        <outlet property="funnyCenterConstains" destination="KJf-CK-BGf" id="BJx-2S-aCF"/>
                         <outlet property="funnyImage" destination="gdi-2K-71r" id="AcU-hy-vLn"/>
                         <outlet property="funnyLabel" destination="4ic-Ua-Naa" id="c5A-OL-Tbe"/>
+                        <outlet property="funnyPopUpView" destination="xkL-Dk-TGg" id="OrW-OF-KtU"/>
+                        <outlet property="funnyStatusLabel" destination="JSn-jk-IfG" id="i8C-DD-hNi"/>
+                        <outlet property="inspirationCenterConstains" destination="Vvd-wp-7Pb" id="isG-ug-CjP"/>
+                        <outlet property="inspirationStatusLabel" destination="rA4-fF-5kv" id="VNE-UE-l51"/>
+                        <outlet property="inspirationViewPopUp" destination="Yl3-c0-NhL" id="LHJ-gX-rwz"/>
                         <outlet property="inspireImage" destination="UhJ-4b-ag6" id="vTh-QD-aNt"/>
                         <outlet property="inspireLabel" destination="iaS-Tt-rP3" id="p5t-KA-vrc"/>
+                        <outlet property="newyearCenterConstains" destination="rVH-gI-nTC" id="LfD-Mm-sP7"/>
                         <outlet property="newyearImage" destination="4IY-be-XQm" id="L2F-39-eOH"/>
                         <outlet property="newyearLabel" destination="Sdn-aW-Se4" id="coU-Vo-UKR"/>
+                        <outlet property="newyearPopUpView" destination="wad-WQ-JRl" id="r5h-rI-T89"/>
+                        <outlet property="newyearStatusLabel" destination="g8A-7H-wdk" id="1gp-fi-yA6"/>
                         <outlet property="quoteImage1" destination="dZM-QT-xZd" id="umO-Fr-tAl"/>
                         <outlet property="quoteImage2" destination="ffE-FJ-EGN" id="LgV-0l-xWY"/>
                         <outlet property="quoteImage3" destination="7Zg-TR-7dJ" id="cLV-gb-dW0"/>

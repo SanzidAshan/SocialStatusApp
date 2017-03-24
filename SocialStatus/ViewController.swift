@@ -9,10 +9,26 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet weak var friendshipCenterContains: NSLayoutConstraint!
+    @IBOutlet weak var funnyCenterConstains: NSLayoutConstraint!
     
+    @IBOutlet weak var friendshipstatusLabel: UILabel!
+    @IBOutlet weak var newyearCenterConstains: NSLayoutConstraint!
+    
+    @IBOutlet weak var inspirationCenterConstains: NSLayoutConstraint!
+    
+    @IBOutlet weak var funnyPopUpView: PopUpViewCustom!
+    @IBOutlet weak var funnyStatusLabel: UILabel!
+    @IBOutlet weak var friendshipLabel: UILabel!
+    @IBOutlet weak var friendshipPopUpView: PopUpViewCustom!
+    @IBOutlet weak var newyearStatusLabel: UILabel!
+    
+    @IBOutlet weak var newyearPopUpView: PopUpViewCustom!
     
     // Mark :- Outlets 
     
+    @IBOutlet weak var inspirationStatusLabel: UILabel!
+    @IBOutlet weak var inspirationViewPopUp: PopUpViewCustom!
     
     @IBOutlet weak var birthdayStatusLabel: UILabel!
     
@@ -35,7 +51,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var birthdayLabel: UILabel!
     @IBOutlet weak var inspireLabel: UILabel!
     @IBOutlet weak var newyearLabel: UILabel!
-    @IBOutlet weak var friendshipLabel: UILabel!
     @IBOutlet weak var romanticImage: UIImageView!
     @IBOutlet weak var birthdayImage: UIImageView!
 
@@ -58,6 +73,7 @@ class ViewController: UIViewController {
    
     
     // Mark :- ViewDidAppear  Function
+    
     override func viewDidAppear(_ animated: Bool) {
         
         super.viewDidAppear(animated)
@@ -149,7 +165,61 @@ class ViewController: UIViewController {
         present(activityViewController, animated: true, completion: {})
     }
     
+    @IBAction func inspirationButtonAction(_ sender: Any) {
+        
+        inspirationCenterConstains.constant = 0
+        backgroundButtonOutlet.alpha = 1
+        
+        UIView.animate(withDuration: 0.7 , animations: {
+            
+            self.view.layoutIfNeeded()
+        })
+        
+        
+        
+    }
     
+    @IBAction func newyearButtonAction(_ sender: Any) {
+        
+        newyearCenterConstains.constant = 0
+        
+        backgroundButtonOutlet.alpha = 1
+        
+        UIView.animate(withDuration: 0.7 , animations: {
+            
+            self.view.layoutIfNeeded()
+        })
+        
+        
+        
+    }
+    
+    @IBAction func friendshipButtonAction(_ sender: Any) {
+        
+        friendshipCenterContains.constant = 0
+        backgroundButtonOutlet.alpha = 1
+        
+        UIView.animate(withDuration: 0.7 , animations: {
+            
+            self.view.layoutIfNeeded()
+        })
+        
+        
+    }
+    
+    @IBAction func funnButtonAction(_ sender: Any) {
+        
+        funnyCenterConstains.constant = 0
+        
+        backgroundButtonOutlet.alpha = 1
+        
+        UIView.animate(withDuration: 0.7 , animations: {
+            
+            self.view.layoutIfNeeded()
+        })
+        
+        
+    }
     
     @IBAction func romanticButtonAction(_ sender: Any) {
         
@@ -167,6 +237,11 @@ class ViewController: UIViewController {
         
         romanticCenterConstrains.constant = -600
         birthdayCenterConstrains.constant = -600
+        inspirationCenterConstains.constant = -600
+        newyearCenterConstains.constant = -600
+        friendshipCenterContains.constant = -600
+        funnyCenterConstains.constant = -600
+       
 
         backgroundButtonOutlet.alpha = 0
         
@@ -217,6 +292,43 @@ class ViewController: UIViewController {
         
         displayShareSheet(shareContent:birthdayStatusLabel.text!)
 
+        
+        
+    }
+    
+    @IBAction func nextInspirationAction(_ sender: Any) {
+        
+        
+    }
+    
+    @IBAction func shareInspirationAction(_ sender: Any) {
+        
+        
+    }
+    
+    @IBAction func nextNewyearAction(_ sender: Any) {
+        
+        
+    }
+    @IBAction func shareNewYear(_ sender: Any) {
+    }
+    
+    
+    @IBAction func nextFriendship(_ sender: Any) {
+        
+        
+    }
+    
+    
+    @IBAction func shareFriendship(_ sender: Any) {
+    }
+    
+    @IBAction func nextFunnyAction(_ sender: Any) {
+        
+        
+    }
+    
+    @IBAction func shareFunnyAction(_ sender: Any) {
         
         
     }
