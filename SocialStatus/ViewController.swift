@@ -41,11 +41,12 @@ class ViewController: UIViewController {
     
     // Mark :- Outlets of Status Labels
     
-    @IBOutlet weak var friendshipstatusLabel: UILabel!
+    @IBOutlet weak var birthdayStatuSLabel: UILabel!
     @IBOutlet weak var funnyStatusLabel: UILabel!
+    
+    @IBOutlet weak var friendshipstatusLabel: UILabel!
     @IBOutlet weak var newyearStatusLabel: UILabel!
     @IBOutlet weak var inspirationStatusLabel: UILabel!
-    @IBOutlet weak var birthdayStatusLabel: UILabel!
     @IBOutlet weak var romanticStatusLabel: UILabel!
 
     // Outlets of Images
@@ -182,6 +183,7 @@ class ViewController: UIViewController {
     
     // Mark : - Share Sheet Function 
     
+    
     func displayShareSheet(shareContent:String) {
         
         let activityViewController = UIActivityViewController(activityItems: [shareContent as NSString], applicationActivities: nil)
@@ -190,6 +192,7 @@ class ViewController: UIViewController {
     
     
     // Mark : - Sliding Pop Up Function
+    
     
     func slidePopupWithView(){
         
@@ -202,6 +205,8 @@ class ViewController: UIViewController {
         
     }
     
+    
+    // Mark :- Closing pop up Function
     
     
     func tappingAnywhereToClosePopUp(){
@@ -219,6 +224,7 @@ class ViewController: UIViewController {
     
     
     // Mark : - Action Buttons for pop up Views
+    
     
     
     @IBAction func inspirationButtonAction(_ sender: Any) {
@@ -265,6 +271,7 @@ class ViewController: UIViewController {
     
     // Mark:-  Background Button Action
     
+    
     @IBAction func backGroundButton(_ sender: UIButton) {
         
         tappingAnywhereToClosePopUp()
@@ -283,7 +290,7 @@ class ViewController: UIViewController {
     @IBAction func nextBirthdayButton(_ sender: Any) {
         
         
-        birthdayStatusLabel.text = DataModel().getBirthdayData()
+        birthdayStatuSLabel.text = DataModel().getBirthdayData()
 
     }
    
@@ -310,52 +317,52 @@ class ViewController: UIViewController {
         
     }
     
-
-    @IBAction func nextFunnyAction(_ sender: Any) {
-        
+    @IBAction func nextFunnnyAction(_ sender: Any) {
         
         funnyStatusLabel.text = DataModel().funnyData()
         
 
     }
+
+   
     
-    
-    
-    @IBAction func shareFriendship(_ sender: Any) {
-        
-        displayShareSheet(shareContent:friendshipstatusLabel.text!)
-        
-        
-    }
-    
+   
     // Mark :- Share Status Actions
     
-    @IBAction func shareFunnyAction(_ sender: Any) {
+    @IBAction func shareFunnyAction(_ sender: UIButton) {
         
-        displayShareSheet(shareContent:funnyStatusLabel.text!)
+        displayShareSheet(shareContent: funnyStatusLabel.text!)
+        
     }
     
-    @IBAction func shareRomanticStatus(_ sender: Any) {
+    @IBAction func shareRomanticStatus(_ sender: UIButton) {
         
         displayShareSheet(shareContent: romanticStatusLabel.text!)
         
     }
     
-    @IBAction func shareBirthdayButton(_ sender: Any) {
+    @IBAction func shareBirthdayButton(_ sender: UIButton) {
         
-        displayShareSheet(shareContent:birthdayStatusLabel.text!)
+        displayShareSheet(shareContent:birthdayStatuSLabel.text!)
         
     }
     
-    @IBAction func shareInspirationAction(_ sender: Any) {
+    @IBAction func shareInspirationAction(_ sender: UIButton) {
         
         displayShareSheet(shareContent:inspirationStatusLabel.text!)
     
     }
     
-    @IBAction func shareNewYear(_ sender: Any) {
+    @IBAction func shareNewYear(_ sender: UIButton) {
         
         displayShareSheet(shareContent:newyearStatusLabel.text!)
+        
+    }
+    
+    @IBAction func shareFriendship(_ sender: UIButton) {
+        
+        displayShareSheet(shareContent:friendshipstatusLabel.text!)
+        
         
     }
     

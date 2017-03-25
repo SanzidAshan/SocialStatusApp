@@ -324,7 +324,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oaa-tl-jaU" userLabel="BirthdayView" customClass="PopUpViewCustom" customModule="SocialStatus" customModuleProvider="target">
                                 <rect key="frame" x="-580" y="184" width="373" height="368"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1QL-xC-dul">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1QL-xC-dul" userLabel="BirthdayStatus">
                                         <rect key="frame" x="16" y="184" width="341" height="0.0"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -369,7 +369,7 @@
                                                 </constraints>
                                                 <state key="normal" backgroundImage="share"/>
                                                 <connections>
-                                                    <action selector="shareBirthdayButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ICm-OX-BCA"/>
+                                                    <action selector="shareBirthdayButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vZP-pB-ElW"/>
                                                     <action selector="shareRomanticStatus:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xyo-qC-i4Z"/>
                                                 </connections>
                                             </button>
@@ -484,7 +484,6 @@
                                                 </constraints>
                                                 <state key="normal" backgroundImage="share"/>
                                                 <connections>
-                                                    <action selector="shareBirthdayButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ooq-bJ-rQE"/>
                                                     <action selector="shareInspirationAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XSO-ea-MXb"/>
                                                     <action selector="shareRomanticStatus:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Crv-zr-onI"/>
                                                 </connections>
@@ -602,7 +601,6 @@
                                                 </constraints>
                                                 <state key="normal" backgroundImage="share"/>
                                                 <connections>
-                                                    <action selector="shareBirthdayButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4cE-Nx-rCu"/>
                                                     <action selector="shareNewYear:" destination="BYZ-38-t0r" eventType="touchUpInside" id="stF-bY-8vi"/>
                                                     <action selector="shareRomanticStatus:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ocv-21-Cqj"/>
                                                 </connections>
@@ -712,12 +710,14 @@
                                                     <constraint firstAttribute="height" constant="40" id="VBa-VG-S5n"/>
                                                 </constraints>
                                             </imageView>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lAA-9S-ThE" userLabel="Sharefriend">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lAA-9S-ThE" userLabel="Sharefriend">
                                                 <rect key="frame" x="324" y="6" width="40" height="40"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="40" id="QnC-tR-oY4"/>
+                                                    <constraint firstAttribute="height" constant="40" id="TEF-8F-Thi"/>
+                                                </constraints>
                                                 <state key="normal" backgroundImage="share"/>
                                                 <connections>
-                                                    <action selector="shareBirthdayButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2HB-He-mj8"/>
                                                     <action selector="shareFriendship:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Shz-fC-fp4"/>
                                                     <action selector="shareRomanticStatus:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eUY-nX-lh9"/>
                                                 </connections>
@@ -733,14 +733,17 @@
                                         <color key="backgroundColor" red="0.92860704660000004" green="0.29591137169999998" blue="0.44303110239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstItem="tDB-Jv-Zw2" firstAttribute="leading" secondItem="DY2-qL-yUe" secondAttribute="leading" constant="6" id="1Dy-eK-R2f"/>
+                                            <constraint firstAttribute="trailing" secondItem="lAA-9S-ThE" secondAttribute="trailing" constant="9" id="Iot-Rb-xGf"/>
                                             <constraint firstItem="Bke-j6-FVI" firstAttribute="leading" secondItem="ed9-JV-WiV" secondAttribute="trailing" constant="16" id="JiX-rA-nzB"/>
                                             <constraint firstItem="tDB-Jv-Zw2" firstAttribute="top" secondItem="DY2-qL-yUe" secondAttribute="top" constant="8" id="L1Y-4k-3E9"/>
+                                            <constraint firstItem="lAA-9S-ThE" firstAttribute="top" secondItem="DY2-qL-yUe" secondAttribute="top" constant="6" id="OPS-9g-QS3"/>
                                             <constraint firstItem="tDB-Jv-Zw2" firstAttribute="centerY" secondItem="ed9-JV-WiV" secondAttribute="centerY" id="VwA-eM-qZl"/>
                                             <constraint firstItem="Bke-j6-FVI" firstAttribute="centerY" secondItem="DY2-qL-yUe" secondAttribute="centerY" id="WMs-qn-F4B"/>
                                             <constraint firstAttribute="bottom" secondItem="ed9-JV-WiV" secondAttribute="bottom" constant="5" id="Xlt-5C-AaZ"/>
                                             <constraint firstItem="ed9-JV-WiV" firstAttribute="top" secondItem="DY2-qL-yUe" secondAttribute="top" constant="5" id="dCh-D3-GsO"/>
                                             <constraint firstAttribute="bottom" secondItem="tDB-Jv-Zw2" secondAttribute="bottom" constant="8" id="ieO-th-JFx"/>
                                             <constraint firstItem="Bke-j6-FVI" firstAttribute="centerX" secondItem="DY2-qL-yUe" secondAttribute="centerX" id="t1D-0N-PsD"/>
+                                            <constraint firstAttribute="bottom" secondItem="lAA-9S-ThE" secondAttribute="bottom" constant="4" id="wYm-Hh-yk3"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HDm-NQ-EXL">
@@ -784,16 +787,16 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xkL-Dk-TGg" userLabel="Funny" customClass="PopUpViewCustom" customModule="SocialStatus" customModuleProvider="target">
-                                <rect key="frame" x="-580" y="184" width="373" height="368"/>
+                                <rect key="frame" x="-579.66666666666663" y="184" width="373" height="368"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JSn-jk-IfG">
-                                        <rect key="frame" x="16" y="184" width="341" height="0.0"/>
+                                        <rect key="frame" x="15.666666666666742" y="184" width="341" height="0.0"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tXp-FZ-dl4" userLabel="Next Funny">
-                                        <rect key="frame" x="0.0" y="323" width="373" height="45"/>
+                                        <rect key="frame" x="-0.33333333333325754" y="323" width="373" height="45"/>
                                         <color key="backgroundColor" red="0.92860704660000004" green="0.29591137169999998" blue="0.44303110239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="45" id="jEb-Ya-RlH"/>
@@ -805,41 +808,28 @@
                                         </state>
                                         <connections>
                                             <action selector="nextBirthdayButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XEf-Ig-35p"/>
-                                            <action selector="nextFunnyAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fTN-JS-Hey"/>
+                                            <action selector="nextFunnnyAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qin-qE-ku0"/>
                                             <action selector="nextRomanticStatus:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QT5-qy-YsL"/>
                                         </connections>
                                     </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZbR-Fp-3YO">
-                                        <rect key="frame" x="0.0" y="0.0" width="373" height="50"/>
+                                        <rect key="frame" x="-0.33333333333325754" y="0.0" width="373" height="50"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Funny" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vNf-bT-erc">
-                                                <rect key="frame" x="163" y="15" width="47" height="21"/>
+                                                <rect key="frame" x="162.66666666666669" y="15" width="47" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="funny" translatesAutoresizingMaskIntoConstraints="NO" id="ldT-x4-beC">
-                                                <rect key="frame" x="107" y="5" width="40" height="40"/>
+                                                <rect key="frame" x="106.66666666666669" y="5" width="40" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="hqj-vp-2sZ"/>
                                                     <constraint firstAttribute="width" constant="40" id="uVl-GJ-0Rh"/>
                                                 </constraints>
                                             </imageView>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rLY-os-ogL" userLabel="ShareFunny">
-                                                <rect key="frame" x="325" y="6" width="40" height="40"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="40" id="YlG-sl-3rA"/>
-                                                    <constraint firstAttribute="width" constant="40" id="jjV-Ef-t3B"/>
-                                                </constraints>
-                                                <state key="normal" backgroundImage="share"/>
-                                                <connections>
-                                                    <action selector="shareBirthdayButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GLo-cR-aBC"/>
-                                                    <action selector="shareFunnyAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TKI-F0-zOw"/>
-                                                    <action selector="shareRomanticStatus:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1db-ZB-hxK"/>
-                                                </connections>
-                                            </button>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="quote" translatesAutoresizingMaskIntoConstraints="NO" id="Bak-Qv-fwu">
-                                                <rect key="frame" x="6" y="8" width="34" height="34"/>
+                                                <rect key="frame" x="5.6666666666667425" y="8" width="34" height="34"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="34" id="SA1-cI-5Yy"/>
                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="34" id="Tec-QR-onY"/>
@@ -847,16 +837,26 @@
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="34" id="sKm-me-KYd"/>
                                                 </constraints>
                                             </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LgZ-qQ-Upg" userLabel="ShareFunny">
+                                                <rect key="frame" x="325.66666666666674" y="5.6666666666666572" width="39" height="39"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="39" id="2vd-QJ-OxW"/>
+                                                    <constraint firstAttribute="width" constant="39" id="TXf-g9-Fbc"/>
+                                                </constraints>
+                                                <state key="normal" backgroundImage="share"/>
+                                                <connections>
+                                                    <action selector="shareFunnyAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EUe-Hv-JdB"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" red="0.92860704660000004" green="0.29591137169999998" blue="0.44303110239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="AAF-A3-4By"/>
-                                            <constraint firstAttribute="bottom" secondItem="rLY-os-ogL" secondAttribute="bottom" constant="4" id="DYB-s7-N3P"/>
-                                            <constraint firstItem="rLY-os-ogL" firstAttribute="top" secondItem="ZbR-Fp-3YO" secondAttribute="top" constant="6" id="Dfq-87-UEb"/>
+                                            <constraint firstItem="LgZ-qQ-Upg" firstAttribute="trailing" secondItem="ZbR-Fp-3YO" secondAttribute="trailingMargin" id="G0q-6Q-Vfb"/>
                                             <constraint firstAttribute="bottom" secondItem="Bak-Qv-fwu" secondAttribute="bottom" constant="8" id="Gqj-gV-9UV"/>
                                             <constraint firstItem="Bak-Qv-fwu" firstAttribute="leading" secondItem="ZbR-Fp-3YO" secondAttribute="leading" constant="6" id="HFa-G9-bFg"/>
-                                            <constraint firstAttribute="trailing" secondItem="rLY-os-ogL" secondAttribute="trailing" constant="8" id="Jjn-gL-zP0"/>
                                             <constraint firstItem="Bak-Qv-fwu" firstAttribute="centerY" secondItem="ldT-x4-beC" secondAttribute="centerY" id="LDm-rp-qkL"/>
+                                            <constraint firstItem="LgZ-qQ-Upg" firstAttribute="centerY" secondItem="vNf-bT-erc" secondAttribute="centerY" id="W0l-Tb-GQQ"/>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="cFY-3q-jCv"/>
                                             <constraint firstItem="vNf-bT-erc" firstAttribute="centerX" secondItem="ZbR-Fp-3YO" secondAttribute="centerX" id="geB-Ka-MZH"/>
                                             <constraint firstItem="ldT-x4-beC" firstAttribute="top" secondItem="ZbR-Fp-3YO" secondAttribute="top" constant="5" id="giv-so-EPT"/>
@@ -867,7 +867,7 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QzC-Gs-UVb">
-                                        <rect key="frame" x="0.0" y="50" width="373" height="2"/>
+                                        <rect key="frame" x="-0.33333333333325754" y="50" width="373" height="2"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="2" id="JnT-TR-uxB"/>
@@ -875,7 +875,7 @@
                                         </constraints>
                                     </view>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="quote" translatesAutoresizingMaskIntoConstraints="NO" id="gDP-gb-DWf">
-                                        <rect key="frame" x="331" y="328" width="34" height="34"/>
+                                        <rect key="frame" x="330.66666666666674" y="328" width="34" height="34"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="34" id="1ua-MQ-nLB"/>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="34" id="2F2-Th-Fmb"/>
@@ -989,7 +989,7 @@
                         <outlet property="birthdayCenterConstrains" destination="f7f-93-PCC" id="J0i-RD-BpF"/>
                         <outlet property="birthdayImage" destination="0QV-z7-QI1" id="qGr-ke-jhc"/>
                         <outlet property="birthdayLabel" destination="vzD-WF-XHX" id="Qsy-0S-rAI"/>
-                        <outlet property="birthdayStatusLabel" destination="1QL-xC-dul" id="WLG-q3-pzk"/>
+                        <outlet property="birthdayStatuSLabel" destination="1QL-xC-dul" id="sEI-wB-AKg"/>
                         <outlet property="birthdayViewPopUp" destination="Oaa-tl-jaU" id="Nrz-bo-lz2"/>
                         <outlet property="friendImage" destination="BNA-NO-cvO" id="exs-dn-7gP"/>
                         <outlet property="friendshipCenterContains" destination="QQ6-OW-4UT" id="7KZ-Mp-Kyg"/>
@@ -1000,7 +1000,7 @@
                         <outlet property="funnyImage" destination="gdi-2K-71r" id="AcU-hy-vLn"/>
                         <outlet property="funnyLabel" destination="4ic-Ua-Naa" id="c5A-OL-Tbe"/>
                         <outlet property="funnyPopUpView" destination="xkL-Dk-TGg" id="OrW-OF-KtU"/>
-                        <outlet property="funnyStatusLabel" destination="JSn-jk-IfG" id="i8C-DD-hNi"/>
+                        <outlet property="funnyStatusLabel" destination="JSn-jk-IfG" id="vec-hv-iM9"/>
                         <outlet property="inspirationCenterConstains" destination="Vvd-wp-7Pb" id="isG-ug-CjP"/>
                         <outlet property="inspirationStatusLabel" destination="rA4-fF-5kv" id="VNE-UE-l51"/>
                         <outlet property="inspirationViewPopUp" destination="Yl3-c0-NhL" id="LHJ-gX-rwz"/>
